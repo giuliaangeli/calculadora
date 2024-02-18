@@ -109,9 +109,7 @@ const App = () => {
       <Content>
         <Input value={currentNumber}/>
         <Grid>
-          <Button label="C" onClick = {handleClearNumber}/>
-          <Button label="<" onClick = {handleClearNumber}/>
-          <Button label="+/-" onClick = {handleClearNumber}/>
+          <Button label="C" gridColumn="span 3" onClick = {handleClearNumber}/>
           <Button label="/" operator onClick = {() => handleAddNumber('/')}/>
           <Button label="7" onClick = {() => handleAddNumber('7')}/>
           <Button label="8" onClick = {() => handleAddNumber('8')}/>
